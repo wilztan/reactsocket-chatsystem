@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+   }
+  to {
+    transform: rotate(360deg);
+   }
+}
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+}
+
+.logout{
+  background-color:  #222;
+  border: none;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-message {
+  background: #000;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.message {
+  border: 0; padding: 10px; width: 79%; margin-right: .5%;
+  border-radius: 5px;
+}
+.form-message button {
+  width: 19%;
+  border: none; padding: 10px;
+  border-radius: 5px;
+  background-color: #FDD835;
+}
+#messages {
+  list-style-type: none; margin: 0; padding: 0;
+}
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+.message-list{
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.message-list small{
+  float: right;
+  font-size: 10px;
+}
+
+
+.message-friend{
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: flex-start; /* Safari 7.0+ */
+  display: flex;
+  align-items: flex-start;
+}
+
+.message-me{
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: flex-end; /* Safari 7.0+ */
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.message-friend .messageBubble{
+  background: #81C784;
+}
+
+.message-me .messageBubble{
+  background: #ECEFF1;
+}
+
+.messageBubble{
+
+  margin: 10px;
+  padding: 10px;
+  max-width: 70%;
+  display : inline-block ;
+  border-radius: 10px;
+}
+
+.messageBubble .buble-username{
+  font-weight: bold;
+  text-align: left;
+}
+
+.messageBubble .buble-message{
+  text-align: left;
+}
+
+.inputName{
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.inputName input, .inputName input:focus{
+  outline: none;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.inputName input:focus{
+  animation: inputChange 1s forwards;
+}
+
+@keyframes inputChange {
+  from {
+    border-bottom: 1px solid black;
+  }
+  to{
+    border-bottom: 1px solid #03A9F4;
+  }
+}
+
+
+.inputName button{
+  font-size: 20px;
+  margin-left: 10px;
+  min-width: 80px;
+  background-color: #FDD835;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
